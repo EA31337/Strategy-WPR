@@ -59,7 +59,7 @@ class Stg_WPR : public Strategy {
   Stg_WPR(StgParams &_sparams, TradeParams &_tparams, ChartParams &_cparams, string _name = "")
       : Strategy(_sparams, _tparams, _cparams, _name) {}
 
-  static Stg_WPR *Init(ENUM_TIMEFRAMES _tf = NULL) {
+  static Stg_WPR *Init(ENUM_TIMEFRAMES _tf = NULL, EA* _ea = NULL) {
     // Initialize strategy initial values.
     Stg_WPR_Params_Defaults stg_wpr_defaults;
     StgParams _stg_params(stg_wpr_defaults);
